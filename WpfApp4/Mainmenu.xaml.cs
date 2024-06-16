@@ -29,7 +29,7 @@ namespace WpfApp4
         List<string> str_list_jobject = new List<string>();
         List<string> login_list = new List<string>();
         byte[] data = new byte[256];
-        public static TcpClient clients = new TcpClient("10.10.21.111", 5558); //연결객체
+        public static TcpClient clients = new TcpClient("10.10.21.111", 5562); //연결객체
         public Mainmenu()
         {
             InitializeComponent();

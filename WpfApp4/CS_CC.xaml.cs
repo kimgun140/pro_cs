@@ -39,14 +39,13 @@ namespace WpfApp4
             InitializeComponent();
             txtbox_chat1.Text = "상담원과의 연결을 대기합니다.";
             Task.Run(() => Wait_cc());
-            Task.Run(() => Read_Chat());
+
         }
         public void Wait_cc() //Task 함수 (서버에선 고객 대기방 함수)
         {
             byte[] data1 = new byte[256];
             int bytes = stream.Read(data1, 0, data1.Length);//받는 데이터의 바이트배열, 인덱스, 길이
             string responses = Encoding.UTF8.GetString(data1, 0, bytes);
-            //testtest.Text = responses;
             Console.WriteLine($"responses: {responses}");
             if (responses == "채팅가능")
             {
@@ -56,8 +55,9 @@ namespace WpfApp4
                 Dispatcher.BeginInvoke(new Action(() =>
                 {
                     txtbox_send1.IsReadOnly = false;
-                    txtbox_chat1.Text =" ";
+                    txtbox_chat1.Text = " ";
                 }));
+                Task.Run(() => Read_Chat());
             }
         }
         public void Read_Chat()

@@ -126,8 +126,8 @@
         </Image>-->
         <TextBlock x:Name="txb1" HorizontalAlignment="Center" Height="20" Margin="0,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" />
 
-        <TextBox x:Name="MyTextBoxid" Text="ID" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="300,98,300,307" BorderThickness="0" Panel.ZIndex="2" Width="200" Height="45" />
-        <PasswordBox x:Name="MyTextBoxpw" Password="PassWord" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="300,172,300,233" BorderThickness="0" Panel.ZIndex="2" Width="200" Height="45" />
+        <TextBox x:Name="MyTextBoxid" Text="AAAA" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="300,98,300,307" BorderThickness="0" Panel.ZIndex="2" Width="200" Height="45" />
+        <PasswordBox x:Name="MyTextBoxpw" Password="1234" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="300,172,300,233" BorderThickness="0" Panel.ZIndex="2" Width="200" Height="45" />
         <Button x:Name="btn_close" Style="{StaticResource ButtonStyle3}" Content="Button" Margin="572,56,185,368" Click="Button_Click_close" Panel.ZIndex="2" />
     </Grid>
 </Page>
